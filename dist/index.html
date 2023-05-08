@@ -6,16 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather App</title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
 </head>
 <body>
 
 <header>
-    <h1>Header</h1>
+    <div class="place"></div>
     <form>
         <label for="search" class="invisible">Search City</label>
-        <button type="submit"><img src="./f9705ffe407455bd10ed.svg"></button>
+        <input id="search_button" type="image" src="./f9705ffe407455bd10ed.svg" alt="search">
         <input id="search" type="text" placeholder="Search City...">
     </form>
     <nav>
@@ -35,7 +35,7 @@
 </main>
 
 <footer>
-    <h1>Footer</h1>
+    Copyright &copy; koloseki <a class="gitLink"href="https://github.com/koloseki"><img class="imgOfGithub" src="img/icons8-github.svg" height="30vh" width="auto" alt="github"></a>
 </footer>
 
 

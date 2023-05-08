@@ -14,6 +14,7 @@ body{
     overflow: hidden;
     background-color: var(--mainColor);
     color: var(--whiteColor);
+    font-family: "Roboto Light", sans-serif;
 }
 
 body >*{
@@ -23,23 +24,60 @@ body >*{
 /*Header Section*/
 
 body > header{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 10vh;
+    width: 100vw;
 }
+
+header > * {
+    outline: 1px solid red;
+}
+
+
+header > .place{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+header > .place > img{
+    width: 2rem;
+    height: 2rem;
+    padding-right: 0.5rem;
+   filter: invert(100%) sepia(0%) saturate(4229%) hue-rotate(33deg) brightness(120%) contrast(93%);;
+}
+
+header > .place > h1{
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+
+header > .place > h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-left: 0.1rem;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+
+
 
 header > form {
     background-color:var(--secondaryColor);
     display: flex;
     width: 20vw;
     border-radius: 10rem;
+    justify-items: center;
+    margin-left: 5vw;
 }
 
 header > form > input{
     background-color: var(--secondaryColor);
     color: var(--whiteColor);
-    width: 20vw;
     border: none;
     outline: none;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
@@ -48,9 +86,9 @@ header > form > input{
     border-radius: 10rem;
 }
 
-header > form > button{
-
-    filter: invert(10%) sepia(10%) saturate(18%) hue-rotate(353deg) brightness(96%) contrast(94%);
+header > form > .search_button{
+    filter: brightness(100);
+    fill: var(--whiteColor);
     border: none;
     outline: none;
     padding: 0.5rem;
@@ -67,8 +105,8 @@ body > main{
 }
 
 main > .container {
-    background-color: var(--whiteColor);
-    color: var(--mainColor);
+    background-color: var(--secondaryColor);
+
 }
 
 
@@ -76,6 +114,9 @@ main > .container {
 
 body > footer{
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
