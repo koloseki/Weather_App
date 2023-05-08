@@ -1,0 +1,90 @@
+:root{
+    --mainColor: #101014;
+    --secondaryColor: #1e1e1e;
+    --whiteColor: snow;
+}
+
+
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+}
+
+body >*{
+    outline: 1px solid red;
+}
+
+/*Header Section*/
+
+body > header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+header > form {
+    background-color:var(--secondaryColor);
+    display: flex;
+    width: 20vw;
+    border-radius: 10rem;
+}
+
+header > form > input{
+    background-color: var(--secondaryColor);
+    color: var(--whiteColor);
+    width: 20vw;
+    border: none;
+    outline: none;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: auto;
+    border-radius: 10rem;
+}
+
+header > form > button{
+
+    filter: invert(10%) sepia(10%) saturate(18%) hue-rotate(353deg) brightness(96%) contrast(94%);
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+
+
+/*Main Section*/
+
+body > main{
+    height: 80vh;
+}
+
+main > .container {
+    background-color: var(--whiteColor);
+    color: var(--mainColor);
+}
+
+
+/*Footer Section*/
+
+body > footer{
+    height: 10vh;
+}
+
+
+
+
+.invisible{
+    visibility: hidden;
+    display: none;
+}
+
+
+/*Media query*/
