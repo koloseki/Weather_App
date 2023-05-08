@@ -14,7 +14,7 @@ body{
     overflow: hidden;
     background-color: var(--mainColor);
     color: var(--whiteColor);
-    font-family: "Roboto Light", sans-serif;
+    font-family: montserrat , sans-serif;
 }
 
 body >*{
@@ -32,9 +32,7 @@ body > header{
     width: 100vw;
 }
 
-header > * {
-    outline: 1px solid red;
-}
+
 
 
 header > .place{
@@ -98,6 +96,16 @@ header > form > .search_button{
 }
 
 
+header > .date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
 /*Main Section*/
 
 body > main{
@@ -105,20 +113,66 @@ body > main{
 }
 
 main > .container {
-    background-color: var(--secondaryColor);
-
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
+main > .container > * {
+    background-color: var(--secondaryColor);
+    height: 30vh;
+    width: 15vw;
+    margin: 5vh 5vw 0 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+
+.city-text{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.city-temp{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
 
 
 /*Footer Section*/
 
 body > footer{
     height: 10vh;
+}
+
+footer{
+    width: 100vw;
+    font-size: 1em;
     display: flex;
     justify-content: center;
+    gap: 0.5vw;
+    justify-self: flex-end;
     align-items: center;
 }
 
+.gitLink{
+    margin-top: 1vh;
+}
+
+
+.imgOfGithub{
+    transition: transform .7s ease-in-out;
+}
+
+.imgOfGithub:hover{
+    transform: rotate(360deg);
+
+
+}
 
 
 
