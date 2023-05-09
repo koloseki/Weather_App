@@ -158,6 +158,7 @@ main > .container > * {
     overflow: scroll;
     gap: 5vw;
     align-items: center;
+    overflow-y:hidden;
 }
 
 .container > .hours > *{
