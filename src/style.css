@@ -151,8 +151,27 @@ main > .container > * {
 }
 
 
-.container > .Hours{
+.container > .hours{
     width: 65vw;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    gap: 5vw;
+    align-items: center;
+}
+
+.container > .hours > *{
+    background-color: var(--secondaryColor);
+    font-size: 1.5rem;
+    height: 30vh;
+    width: 15vw;
+    margin: 0 5vw 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem;
+    text-align: center;
 }
 
 
@@ -168,9 +187,7 @@ main > .container > * {
     height: 15vh;
     font-size: 1rem;
     gap:1rem;
-
 }
-
 
 .container > .OtherCity > div > .left{
     display: flex;
@@ -210,15 +227,12 @@ footer{
     margin-top: 1vh;
 }
 
-
 .imgOfGithub{
     transition: transform .7s ease-in-out;
 }
 
 .imgOfGithub:hover{
     transform: rotate(360deg);
-
-
 }
 
 
@@ -232,10 +246,61 @@ footer{
 /*Media query*/
 
 @media only screen and (max-width: 796px){
-    header{
-        background-color: darkolivegreen;
+    body{
+        overflow: scroll;
     }
-    .container > .Hours{
-        width: 55vw;
+
+    body > header{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        height: 30vh;
+    }
+
+    header > form {
+        width: 100vw;
+        border-radius: 0;
+        margin-left: 0;
+        flex-direction: row-reverse;
+    }
+    header > form > .search_button{
+        width: 1vw;
+    }
+    header > form > input{
+        width: 500vw;
+        height: 2vh;
+    }
+
+
+
+    main > .container {
+        flex-direction: column;
+        height: 90vh;
+        width: 100vw;
+        overflow: scroll;
+        align-items: center;
+    }
+
+
+    main > .container > * {
+        height: 35vh;
+        width: 33vw;
+        margin: 3vh 2vw 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    .container > .hours{
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    footer{
+        background-color: var(--mainColor);
+        position: fixed;
+        justify-self: flex-end;
+        bottom: 0;
     }
 }
