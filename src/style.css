@@ -152,7 +152,7 @@ main > .container > * {
 
 
 .container > .hours{
-    width: 65vw;
+    width: 59vw;
     display: flex;
     flex-direction: row;
     overflow: scroll;
