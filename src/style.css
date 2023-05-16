@@ -156,11 +156,11 @@ main > .container > * {
     display: flex;
     flex-direction: row;
     overflow: scroll;
-    gap: 5vw;
+    gap: 6vw;
     align-items: center;
     overflow-y:hidden;
     justify-content: space-between;
-    margin: 5vh 5vw 0 5vw;
+    padding: 0 3vw 0 3vw;
 }
 
 .container > .hours > *{
